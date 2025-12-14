@@ -1,0 +1,2 @@
+# Skeleton
+WFC Map generation
