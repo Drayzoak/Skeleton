@@ -1,0 +1,188 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6af31799-a1cd-4768-ac45-10553e113d78</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>Main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Project01</Name>
+    <RootNamespace>Snake_01</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Test' ">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.py" />
+    <Compile Include="Scripts\Component\Animation.py" />
+    <Compile Include="Scripts\Object\EntityBase.py" />
+    <Compile Include="Scripts\Event\Event.py" />
+    <Compile Include="Scripts\Event\Input.py" />
+    <Compile Include="Scripts\Utilities\Maths.py" />
+    <Compile Include="Scripts\Object\Player.py" />
+    <Compile Include="Scripts\Component\Savegame.py" />
+    <Compile Include="Scripts\World\tile.py" />
+    <Compile Include="Scripts\Utilities\utilities.py" />
+    <Compile Include="Scripts\World\WorldGenerator.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Character\Skeletoon\" />
+    <Folder Include="Assets\Character\Skeletoon\appear\" />
+    <Folder Include="Assets\Character\Skeletoon\attack\" />
+    <Folder Include="Assets\Character\Skeletoon\die\" />
+    <Folder Include="Assets\Character\Skeletoon\idle\" />
+    <Folder Include="Assets\Character\Skeletoon\walk\" />
+    <Folder Include="Assets\Map\" />
+    <Folder Include="Assets\Character\" />
+    <Folder Include="Assets\SpriteSheet\" />
+    <Folder Include="Assets\SpriteSheet\Foliage\" />
+    <Folder Include="Assets\SpriteSheet\Foliage\Grass\" />
+    <Folder Include="Assets\SpriteSheet\TileMap\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Scripts\Component\" />
+    <Folder Include="Scripts\Utilities\" />
+    <Folder Include="Scripts\Object\" />
+    <Folder Include="Scripts\Event\" />
+    <Folder Include="Scripts\World\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Character\Skeletoon\appear\appear_01.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_10.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_02.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_03.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_04.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_05.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_06.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_07.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_08.png" />
+    <Content Include="Assets\Character\Skeletoon\appear\appear_09.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_1_1_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_2_2_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_3_3_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_4_4_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_5_5_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_6_6_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_7_7_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\attack\hit_8_8_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\die\.DS_Store" />
+    <Content Include="Assets\Character\Skeletoon\die\die_1.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_2.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_3.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_4.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_5.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_6.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_7.png" />
+    <Content Include="Assets\Character\Skeletoon\die\die_8.png" />
+    <Content Include="Assets\Character\Skeletoon\idle\idle_1_1_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\idle\idle_2_2_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\idle\idle_3_3_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\idle\idle_4_4_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\idle\idle_5_5_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\idle\idle_6_6_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_1_1_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_2_2_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_3_3_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_4_4_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_5_5_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_6_6_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_7_7_11zon.png" />
+    <Content Include="Assets\Character\Skeletoon\walk\go_8_8_11zon.png" />
+    <Content Include="Assets\Map\gen.png" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\00.png" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\01.png" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\02.jpeg" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\03.jpeg" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\10.jpeg" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\11.jpeg" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\12.jpeg" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\13.jpeg" />
+    <Content Include="Assets\SpriteSheet\Foliage\Grass\Tree_01.png" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-1-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-2-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-3-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-4-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-5-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-6-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-7-column-8.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-1.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-2.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-3.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-4.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-5.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-6.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-7.jpeg" />
+    <Content Include="Assets\SpriteSheet\TileMap\row-8-column-8.jpeg" />
+    <Content Include="Scripts\World\World.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
